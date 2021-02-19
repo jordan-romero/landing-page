@@ -30,6 +30,7 @@ body {
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--mauve);
 }
 
 .logo {
@@ -73,8 +74,19 @@ body {
 .section-title {
     color: var(--dew); 
     font-size: 2rem; 
-    font-family: var(--basic);
+    font-family: var(--mono);
+    letter-spacing: .20rem;
+    font-weight: 400;
     padding: 1rem; 
+}
+
+.sub-title {
+    color: var(--yellow);
+    font-size: 1rem;
+    font-family: var(--mono);
+    text-align: center;
+    letter-spacing: .10rem;
+    font-weight: 500;
 }
 
 .product {
@@ -96,5 +108,25 @@ strong {
     color: var(--white);
     font-family: var(--basic); 
     font-weight: 400;
+    text-align: justify;
+    padding: 1rem; 
+    padding-left: 0; 
 }
 
+.about-cards {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    height: 10rem; 
+    width: 9rem; 
+    background-color: var(--white);
+}
+
+.card-icon {
+    fill: var(--mauve); 
+    width: 2rem; 
+    height: 2rem; 
+}
