@@ -71,6 +71,10 @@ body {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
 }
 
+#product{
+    padding: 1rem; 
+}
+
 .section-title {
     color: var(--dew); 
     font-size: 2rem; 
@@ -113,6 +117,10 @@ strong {
     padding-left: 0; 
 }
 
+#about {
+    padding: 1rem; 
+}
+
 .about-cards {
     display: flex; 
     align-items: center;
@@ -120,13 +128,42 @@ strong {
 }
 
 .card {
-    height: 10rem; 
-    width: 9rem; 
-    background-color: var(--white);
+    height: 13rem; 
+    width: 11rem; 
+    background-color: var(--dew);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, .4);
+    transition: all .2s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, .6);
+}
+
+.card-title {
+    color: var(--dark-gray);
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: .10rem;
+    padding: .5rem; 
 }
 
 .card-icon {
     fill: var(--mauve); 
-    width: 2rem; 
-    height: 2rem; 
+    width: 4rem; 
+    height: 4rem; 
+    padding: .5rem; 
+}
+
+.card-text {
+    color: var(--dark-gray);
+    font-family: var(--basic);
+    font-size: .75rem;
+    padding: .5rem;
+    text-align: center;
 }
