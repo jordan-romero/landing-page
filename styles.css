@@ -31,6 +31,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--mauve);
+    position: fixed;
+    min-width: 100%;
 }
 
 .logo {
@@ -97,6 +99,12 @@ body {
     display: flex; 
     align-items: center;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+    .product {
+        flex-direction: column;
+    }
 }
 
 #video {
@@ -166,4 +174,33 @@ strong {
     font-size: .75rem;
     padding: .5rem;
     text-align: center;
+}
+
+#contact {
+    padding: 1rem; 
+}
+
+#form {
+    display: flex; 
+    flex-direction: column;
+    height: 7rem; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+#email {
+    width: 75%; 
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: .5rem; 
+    color: var(--dark-gray); 
+}
+
+#submit {
+    background-color: var(--mauve);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
 }
