@@ -4,6 +4,9 @@
     --dark-gray: #46494C;
     --mauve: #AF7595; 
     --dew: #DDF2EB; 
+
+    --mono: 'Roboto Mono', monospace;
+    --basic: 'Roboto', sans-serif;
   }
 
 *, 
@@ -18,6 +21,7 @@ body {
     background-color: var(--dark-gray) ;
     font-size: 62.5%;
     line-height: 1.6;
+    font-family: var(--basic);
 }
 
 #header{
@@ -26,11 +30,23 @@ body {
     display: flex; 
 }
 
+.logo {
+    display: flex; 
+    width: 15rem; 
+    justify-content: space-between;
+    align-items: center;
+}
+
 #header-img {
     height: 3rem;
     width: 5rem;   
 }
 
-.logo {
+.title {
     color: var(--yellow);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    font-family: var(--mono);
 }
