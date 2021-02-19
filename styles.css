@@ -28,6 +28,8 @@ body {
     height: 3rem; 
     background-color: var(--dark-gray);
     display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -49,4 +51,21 @@ body {
     letter-spacing: .25rem;
     text-transform: uppercase;
     font-family: var(--mono);
+}
+
+#nav-bar {
+    display: flex; 
+    width: 15rem; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dew)
+}
+
+.nav-link:hover {
+    color: var(--mauve); 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
 }
