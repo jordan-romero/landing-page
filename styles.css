@@ -1,3 +1,36 @@
+:root {
+    --white: #F4FFFD;
+    --yellow: #FFBA08;
+    --dark-gray: #46494C;
+    --mauve: #AF7595; 
+    --dew: #DDF2EB; 
+  }
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 body {
-    background-color: blanchedalmond;
+    background-color: var(--dark-gray) ;
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+#header{
+    height: 3rem; 
+    background-color: var(--dark-gray);
+    display: flex; 
+}
+
+#header-img {
+    height: 3rem;
+    width: 5rem;   
+}
+
+.logo {
+    color: var(--yellow);
 }
