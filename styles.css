@@ -69,3 +69,32 @@ body {
     color: var(--mauve); 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
 }
+
+.section-title {
+    color: var(--dew); 
+    font-size: 2rem; 
+    font-family: var(--basic);
+    padding: 1rem; 
+}
+
+.product {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+#video {
+    padding: 1rem; 
+    border-radius: 2px;
+}
+
+strong {
+    color: var(--yellow)
+}
+
+.product-description {
+    color: var(--white);
+    font-family: var(--basic); 
+    font-weight: 400;
+}
+
