@@ -23,8 +23,7 @@ html {
 }
 
 body {
-    background-color: var(--dark-gray) ;
-    font-size: 62.5%;
+    background-color: var(--dark-gray);
     line-height: 1.6;
     font-family: var(--basic);
 }
